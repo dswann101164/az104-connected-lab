@@ -55,13 +55,17 @@ None of these overlap the old lab's 10.0.0.0/16.
 - GitHub Actions: `terraform plan` → manual approval → `terraform apply`
 - Remote state backend and OIDC federated credentials for the workflow
 
-## Cleanup (last, after layer 1 is applied)
+## Cleanup — done 2026-11-02
 
-1. List everything that would be deleted: resource group `rg-az104-lab` and its
-   contents, plus Connection Monitor `cm-vm-to-blob` in `NetworkWatcherRG`.
-2. Wait for an explicit yes before deleting anything.
-3. Never delete `NetworkWatcherRG` or `NetworkWatcher_eastus2`.
-4. Keep the local `..\export` folder.
+After layer 1 was applied, verified and destroyed, the old lab was removed on
+explicit approval:
+
+- [x] Listed everything to be deleted: resource group `rg-az104-lab` (16 resources)
+      and Connection Monitor `cm-vm-to-blob` in `NetworkWatcherRG`.
+- [x] Deleted `cm-vm-to-blob`; confirmed NotFound in Azure.
+- [x] Deleted `rg-az104-lab`; `az group exists` returns false.
+- [x] Kept `NetworkWatcherRG` and `NetworkWatcher_eastus2` (confirmed still present).
+- [x] Kept the local `..\export` folder (aztfexport reference copy).
 
 ## Closed issues
 
