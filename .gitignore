@@ -1,0 +1,18 @@
+# Terraform working directory and state
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Plan output files can contain secrets
+*.tfplan
+tfplan
+
+# Local variable values (commit terraform.tfvars.example instead)
+*.tfvars
+!*.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

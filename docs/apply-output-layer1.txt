@@ -1,0 +1,197 @@
+random_string.storage_suffix: Creating...
+random_string.storage_suffix: Creation complete after 0s [id=l6k5m7]
+azurerm_resource_group.lab: Creating...
+azurerm_resource_group.lab: Still creating... [00m10s elapsed]
+azurerm_resource_group.lab: Still creating... [00m20s elapsed]
+azurerm_resource_group.lab: Creation complete after 24s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected]
+azurerm_network_security_group.pe: Creating...
+azurerm_network_security_group.spoke["db"]: Creating...
+azurerm_private_dns_zone.blob: Creating...
+azurerm_network_security_group.spoke["web"]: Creating...
+azurerm_public_ip.bastion[0]: Creating...
+azurerm_virtual_network.hub: Creating...
+azurerm_virtual_network.spoke["db"]: Creating...
+azurerm_virtual_network.spoke["web"]: Creating...
+azurerm_storage_account.lab: Creating...
+azurerm_network_security_group.bastion: Creating...
+azurerm_public_ip.bastion[0]: Creation complete after 3s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/publicIPAddresses/pip-bas-hub]
+azurerm_network_security_group.spoke["db"]: Creation complete after 3s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-db]
+azurerm_network_security_group.bastion: Creation complete after 3s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-bastion]
+azurerm_network_security_group.spoke["web"]: Creation complete after 3s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-web]
+azurerm_network_security_group.pe: Creation complete after 3s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-pe]
+azurerm_private_dns_zone.blob: Still creating... [00m10s elapsed]
+azurerm_virtual_network.spoke["db"]: Still creating... [00m10s elapsed]
+azurerm_virtual_network.hub: Still creating... [00m10s elapsed]
+azurerm_virtual_network.spoke["web"]: Still creating... [00m10s elapsed]
+azurerm_storage_account.lab: Still creating... [00m10s elapsed]
+azurerm_virtual_network.hub: Creation complete after 16s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-hub]
+azurerm_subnet.bastion: Creating...
+azurerm_subnet.pe: Creating...
+azurerm_virtual_network.spoke["db"]: Creation complete after 16s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-db]
+azurerm_virtual_network.spoke["web"]: Creation complete after 16s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-web]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Creating...
+azurerm_virtual_network_peering.hub_to_spoke["web"]: Creating...
+azurerm_virtual_network_peering.spoke_to_hub["web"]: Creating...
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Creating...
+azurerm_subnet.spoke["db"]: Creating...
+azurerm_subnet.spoke["web"]: Creating...
+azurerm_private_dns_zone.blob: Still creating... [00m20s elapsed]
+azurerm_storage_account.lab: Still creating... [00m20s elapsed]
+azurerm_subnet.bastion: Creation complete after 5s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-hub/subnets/AzureBastionSubnet]
+azurerm_subnet_network_security_group_association.bastion: Creating...
+azurerm_subnet.spoke["web"]: Creation complete after 6s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-web/subnets/snet-web]
+azurerm_subnet.spoke["db"]: Creation complete after 6s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-db/subnets/snet-db]
+azurerm_subnet_network_security_group_association.spoke["web"]: Creating...
+azurerm_subnet_network_security_group_association.spoke["db"]: Creating...
+azurerm_subnet.pe: Still creating... [00m10s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [00m10s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["web"]: Still creating... [00m10s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Still creating... [00m10s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["web"]: Still creating... [00m10s elapsed]
+azurerm_subnet.pe: Creation complete after 10s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-hub/subnets/snet-pe]
+azurerm_subnet_network_security_group_association.pe: Creating...
+azurerm_subnet_network_security_group_association.spoke["web"]: Creation complete after 6s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-web/subnets/snet-web]
+azurerm_subnet_network_security_group_association.spoke["db"]: Creation complete after 6s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-db/subnets/snet-db]
+azurerm_private_dns_zone.blob: Still creating... [00m30s elapsed]
+azurerm_storage_account.lab: Still creating... [00m30s elapsed]
+azurerm_subnet_network_security_group_association.bastion: Still creating... [00m10s elapsed]
+azurerm_subnet_network_security_group_association.bastion: Creation complete after 11s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-hub/subnets/AzureBastionSubnet]
+azurerm_bastion_host.hub[0]: Creating...
+azurerm_private_dns_zone.blob: Creation complete after 33s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net]
+azurerm_private_dns_zone_virtual_network_link.spoke["db"]: Creating...
+azurerm_private_dns_zone_virtual_network_link.hub: Creating...
+azurerm_private_dns_zone_virtual_network_link.spoke["web"]: Creating...
+azurerm_virtual_network_peering.spoke_to_hub["web"]: Still creating... [00m20s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["web"]: Still creating... [00m20s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [00m20s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Still creating... [00m20s elapsed]
+azurerm_subnet_network_security_group_association.pe: Still creating... [00m10s elapsed]
+azurerm_storage_account.lab: Still creating... [00m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [00m10s elapsed]
+azurerm_private_dns_zone_virtual_network_link.hub: Still creating... [00m10s elapsed]
+azurerm_private_dns_zone_virtual_network_link.spoke["db"]: Still creating... [00m10s elapsed]
+azurerm_private_dns_zone_virtual_network_link.spoke["web"]: Still creating... [00m10s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["web"]: Creation complete after 27s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-web/virtualNetworkPeerings/peer-web-to-hub]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [00m30s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Still creating... [00m30s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["web"]: Still creating... [00m30s elapsed]
+azurerm_subnet_network_security_group_association.pe: Still creating... [00m20s elapsed]
+azurerm_storage_account.lab: Still creating... [00m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [00m20s elapsed]
+azurerm_private_dns_zone_virtual_network_link.spoke["web"]: Still creating... [00m20s elapsed]
+azurerm_private_dns_zone_virtual_network_link.spoke["db"]: Still creating... [00m20s elapsed]
+azurerm_private_dns_zone_virtual_network_link.hub: Still creating... [00m20s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [00m40s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["web"]: Still creating... [00m40s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Still creating... [00m40s elapsed]
+azurerm_subnet_network_security_group_association.pe: Still creating... [00m30s elapsed]
+azurerm_storage_account.lab: Still creating... [01m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [00m30s elapsed]
+azurerm_private_dns_zone_virtual_network_link.hub: Still creating... [00m30s elapsed]
+azurerm_private_dns_zone_virtual_network_link.spoke["web"]: Still creating... [00m30s elapsed]
+azurerm_private_dns_zone_virtual_network_link.spoke["db"]: Still creating... [00m30s elapsed]
+azurerm_private_dns_zone_virtual_network_link.hub: Creation complete after 32s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/link-vnet-hub]
+azurerm_private_dns_zone_virtual_network_link.spoke["db"]: Creation complete after 33s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/link-vnet-spoke-db]
+azurerm_private_dns_zone_virtual_network_link.spoke["web"]: Creation complete after 33s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/link-vnet-spoke-web]
+azurerm_virtual_network_peering.hub_to_spoke["web"]: Still creating... [00m50s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [00m50s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Still creating... [00m50s elapsed]
+azurerm_subnet_network_security_group_association.pe: Still creating... [00m40s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["web"]: Creation complete after 54s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-hub/virtualNetworkPeerings/peer-hub-to-web]
+azurerm_storage_account.lab: Still creating... [01m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [00m40s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [01m00s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Still creating... [01m00s elapsed]
+azurerm_subnet_network_security_group_association.pe: Still creating... [00m50s elapsed]
+azurerm_storage_account.lab: Creation complete after 1m17s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Storage/storageAccounts/staz104l6k5m7]
+azurerm_bastion_host.hub[0]: Still creating... [00m50s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Still creating... [01m10s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [01m10s elapsed]
+azurerm_subnet_network_security_group_association.pe: Still creating... [01m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [01m00s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [01m20s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Still creating... [01m20s elapsed]
+azurerm_virtual_network_peering.spoke_to_hub["db"]: Creation complete after 1m20s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-db/virtualNetworkPeerings/peer-db-to-hub]
+azurerm_subnet_network_security_group_association.pe: Still creating... [01m10s elapsed]
+azurerm_subnet_network_security_group_association.pe: Creation complete after 1m13s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-hub/subnets/snet-pe]
+azurerm_private_endpoint.blob: Creating...
+azurerm_bastion_host.hub[0]: Still creating... [01m10s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [01m30s elapsed]
+azurerm_private_endpoint.blob: Still creating... [00m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [01m20s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Still creating... [01m40s elapsed]
+azurerm_private_endpoint.blob: Still creating... [00m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [01m30s elapsed]
+azurerm_virtual_network_peering.hub_to_spoke["db"]: Creation complete after 1m47s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-hub/virtualNetworkPeerings/peer-hub-to-db]
+azurerm_private_endpoint.blob: Still creating... [00m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [01m40s elapsed]
+azurerm_private_endpoint.blob: Still creating... [00m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [01m50s elapsed]
+azurerm_private_endpoint.blob: Still creating... [00m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [02m00s elapsed]
+azurerm_private_endpoint.blob: Creation complete after 55s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/privateEndpoints/pe-staz104l6k5m7-blob]
+azurerm_bastion_host.hub[0]: Still creating... [02m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [02m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [02m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [02m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [02m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [03m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [03m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [03m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [03m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [03m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [03m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [04m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [04m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [04m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [04m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [04m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [04m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [05m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [05m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [05m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [05m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [05m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [05m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [06m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [06m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [06m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [06m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [06m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [06m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [07m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [07m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [07m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [07m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [07m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [07m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [08m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [08m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [08m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [08m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [08m40s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [08m50s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [09m00s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [09m10s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [09m20s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [09m30s elapsed]
+azurerm_bastion_host.hub[0]: Still creating... [09m40s elapsed]
+azurerm_bastion_host.hub[0]: Creation complete after 9m48s [id=/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/bastionHosts/bas-hub]
+
+Apply complete! Resources: 29 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+bastion_enabled = true
+hub_vnet_id = "/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-hub"
+resource_group_name = "rg-az104-connected"
+spoke_subnet_ids = {
+  "db" = "/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-db/subnets/snet-db"
+  "web" = "/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-web/subnets/snet-web"
+}
+spoke_vnet_ids = {
+  "db" = "/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-db"
+  "web" = "/subscriptions/<subscription-id>/resourceGroups/rg-az104-connected/providers/Microsoft.Network/virtualNetworks/vnet-spoke-web"
+}
+storage_account_name = "staz104l6k5m7"
+storage_blob_private_ip = "10.10.1.4"
