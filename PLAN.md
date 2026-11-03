@@ -33,10 +33,13 @@ None of these overlap the old lab's 10.0.0.0/16.
 - Storage account with a blob private endpoint in the hub, and the
   `privatelink.blob.core.windows.net` private DNS zone linked to all three VNets
 
-### 2. Governance and cost
-- Tags on everything (a `tags` variable is wired in from layer 1; layer 2 enforces it)
-- Budget on the resource group with alert thresholds
-- Azure Policy assignments (e.g. require tags, allowed locations)
+### 2. Governance and cost (done 2026-11-03)
+- Tags on everything: `owner`, `cost_center`, `environment`, `project`, enforced by a
+  variable validation
+- Budget on the resource group: $25/month, email alerts at 50% and 90%
+- Azure Policy at the resource group: cost_center tag (Deny), project tag (Audit),
+  allowed locations East US 2 (Deny)
+- ReadOnly lock on the storage account behind `enable_lock`
 
 ### 3. Identity
 - User-assigned managed identity

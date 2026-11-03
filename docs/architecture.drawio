@@ -6,14 +6,17 @@
         <mxCell id="1" parent="0" />
 
         <!-- Title and legend (left column) -->
-        <mxCell id="title" value="&lt;b&gt;AZ-104 Connected Lab&lt;/b&gt;&lt;br&gt;Layer 1: Network&lt;br&gt;East US 2" style="text;html=1;align=left;verticalAlign=top;fontSize=18;spacing=4;" vertex="1" parent="1">
-          <mxGeometry x="45" y="44" width="253" height="92" as="geometry" />
+        <mxCell id="title" value="&lt;b&gt;AZ-104 Connected Lab&lt;/b&gt;&lt;br&gt;Layer 1: Network&lt;br&gt;Layer 2: Governance&lt;br&gt;East US 2" style="text;html=1;align=left;verticalAlign=top;fontSize=18;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="45" y="44" width="253" height="115" as="geometry" />
         </mxCell>
         <mxCell id="admin" value="&lt;b&gt;Admin browser&lt;/b&gt;&lt;br&gt;Azure portal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="68" y="251" width="184" height="69" as="geometry" />
         </mxCell>
-        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;&lt;br&gt;Solid two-way arrow: VNet peering (both directions)&lt;br&gt;&lt;br&gt;Dashed blue: Private Link&lt;br&gt;&lt;br&gt;Dashed grey: private DNS zone VNet link&lt;br&gt;&lt;br&gt;Shield: NSG, one on every subnet&lt;br&gt;&lt;br&gt;Grey dashed box: layer 4, not yet deployed&lt;br&gt;&lt;br&gt;Bastion Basic reaches spoke VMs over the peerings; spokes are not peered to each other." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#999999;fontSize=13;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="45" y="619" width="241.5" height="379.5" as="geometry" />
+        <mxCell id="governance" value="&lt;b&gt;Governance (layer 2)&lt;/b&gt;&lt;br&gt;Scope: rg-az104-connected&lt;br&gt;&lt;br&gt;Policy: cost_center tag, &lt;b&gt;Deny&lt;/b&gt;&lt;br&gt;Policy: project tag, &lt;b&gt;Audit&lt;/b&gt;&lt;br&gt;Policy: East US 2 only, &lt;b&gt;Deny&lt;/b&gt;&lt;br&gt;&lt;br&gt;Budget: $25/month, email at 50% and 90%&lt;br&gt;&lt;br&gt;Tags on everything: owner, cost_center, environment, project" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFF8E6;strokeColor=#C19C00;strokeWidth=2;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="45" y="345" width="241.5" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;&lt;br&gt;Solid two-way arrow: VNet peering (both directions)&lt;br&gt;&lt;br&gt;Dashed blue: Private Link&lt;br&gt;&lt;br&gt;Dashed grey: private DNS zone VNet link&lt;br&gt;&lt;br&gt;Shield: NSG, one on every subnet&lt;br&gt;&lt;br&gt;Amber: layer 2 governance (policy, budget, lock)&lt;br&gt;&lt;br&gt;Grey dashed box: layer 4, not yet deployed&lt;br&gt;&lt;br&gt;Bastion Basic reaches spoke VMs over the peerings; spokes are not peered to each other." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#999999;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="45" y="619" width="241.5" height="398" as="geometry" />
         </mxCell>
 
         <!-- Resource group -->
@@ -56,7 +59,7 @@
         </mxCell>
 
         <!-- PaaS: storage and private DNS -->
-        <mxCell id="storage" value="Storage account (LRS)&lt;br&gt;Public network access: &lt;b&gt;Disabled&lt;/b&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=13;image=img/lib/azure2/storage/Storage_Accounts.svg;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="storage" value="Storage account (LRS)&lt;br&gt;Public network access: &lt;b&gt;Disabled&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#8A6D00&quot;&gt;&lt;b&gt;ReadOnly lock&lt;/b&gt; (enable_lock)&lt;/font&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=13;image=img/lib/azure2/storage/Storage_Accounts.svg;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="1402" y="256.7" width="57.5" height="46" as="geometry" />
         </mxCell>
 

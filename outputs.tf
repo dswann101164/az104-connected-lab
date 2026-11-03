@@ -25,3 +25,19 @@ output "storage_account_name" {
 output "storage_blob_private_ip" {
   value = azurerm_private_endpoint.blob.private_service_connection[0].private_ip_address
 }
+
+output "policy_assignment_ids" {
+  value = {
+    require_cost_center = azurerm_resource_group_policy_assignment.require_cost_center.id
+    require_project     = azurerm_resource_group_policy_assignment.require_project.id
+    allowed_locations   = azurerm_resource_group_policy_assignment.allowed_locations.id
+  }
+}
+
+output "budget_name" {
+  value = azurerm_consumption_budget_resource_group.lab.name
+}
+
+output "storage_lock_enabled" {
+  value = var.enable_lock
+}

@@ -1,2 +1,9 @@
 # Copy to terraform.tfvars and fill in. terraform.tfvars is gitignored.
 subscription_id = "00000000-0000-0000-0000-000000000000"
+
+# Budget alert recipients (layer 2). Keep real addresses out of committed code.
+budget_alert_emails = ["you@example.com"]
+
+# Optional overrides
+# enable_bastion = false   # ~$142/month when true
+# enable_lock    = false   # must be false before terraform destroy
